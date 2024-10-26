@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://icons.iconarchive.com/icons/hopstarter/sleek-xp-software/128/Yahoo-Widget-Engine-icon.png">
+    <title>Rule Engine with AST</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rule Engine with AST</h1>
+            <p>Create Rule | Combine Rules | Evaluate Rule</p>
+        </header>
+
+        <h2>Create Rule</h2>
+        <form id="create-rule-form">
+            <div>
+                <label for="ruleName">Rule Name</label>
+                <input type="text" id="ruleName" name="ruleName" required>
+            </div>
+            <div>
+                <label for="ruleString">Rule</label>
+                <input type="text" id="ruleString" name="ruleString" required>
+            </div>
+            <button type="submit" class="large-button">Create Rule</button>
+        </form>
+        <pre id="create-rule-result"></pre>
+
+        <h2>Combine Rules</h2>
+        <form id="combine-rules-form">
+            <h3>Enter Rules to Combine</h3><br>
+            <div id="rules-inputs">
+                <div class="rule-container">
+                    <label for="combine-rule1">Rule Name</label>
+                    <input type="text" id="combine-rule1" name="rules" required>
+                    <label for="operator1">Operator</label>
+                    <select id="operator1" name="operator">
+                        <option value="AND">AND</option>
+                        <option value="OR">OR</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="add-rule" class="large-button">Add Another Rule</button>
+            <button type="submit" class="large-button">Combine Rules</button>
+        </form>
+        <pre id="combine-rules-result"></pre>
+
+        <h2>Evaluate Rule</h2>
+        <form id="evaluate-rule-form">
+            <div>
+                <label for="evaluate-ast">Rule AST</label>
+                <input type="text" id="evaluate-ast" name="ast" required>
+            </div>
+            <div>
+                <label for="evaluate-data">Data JSON</label>
+                <textarea id="evaluate-data" name="data" required></textarea>
+            </div>
+            <button type="submit" class="large-button">Evaluate Rule</button>
+        </form>
+        <pre id="evaluate-rule-result"></pre>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>

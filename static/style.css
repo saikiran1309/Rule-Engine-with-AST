@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    background-color: #007BFF;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+h3 {
+    margin: 5px 0;
+}
+
+label {
+    font-size: 18px;
+}
+
+.form-container {
+    padding: 0;
+}
+
+input, button {
+    margin: 5px 0;
+}
+
+form {
+    margin: 0;
+}
+
+form div, form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], 
+form textarea, 
+form select {
+    width: calc(100% - 18px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.large-button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+pre {
+    background-color: #f4f4f9;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* main.js css*/
+.rule-name {
+    margin-top: 100px; /* Adjust as needed */
+}
