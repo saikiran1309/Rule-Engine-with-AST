@@ -26,13 +26,13 @@ The goal of this project is to develop a simple 3-tier rule engine application c
 
 ```
 ## API Design & Features
-- **create_rule**: This function takes a string representing a rule and returns a Node object that represents the corresponding Abstract Syntax Tree (AST).<br><br>
+- **create_rule:** This function takes a string representing a rule and returns a Node object that represents the corresponding Abstract Syntax Tree (AST).<br><br>
 ![Create Rule](https://github.com/user-attachments/assets/5e15ce9c-109a-42c2-beba-f7aa25303c05)
   
-- **combine_rules**: This function accepts a list of rule strings and merges them into a single AST, focusing on efficiency and reducing redundant checks. It returns the root node of the combined AST.<br><br>
+- **combine_rules:** This function accepts a list of rule strings and merges them into a single AST, focusing on efficiency and reducing redundant checks. It returns the root node of the combined AST.<br><br>
 ![Combine Rules](https://github.com/user-attachments/assets/2fed90c4-9d11-4514-8adc-8e0f8035420b)
 
-- **evaluate_rule**: This function evaluates the combined AST against provided attribute data (e.g., age, department, salary, experience). It returns True if the user meets the criteria defined by the rule; otherwise, it returns False.<br><br>
+- **evaluate_rule:** This function evaluates the combined AST against provided attribute data (e.g., age, department, salary, experience). It returns True if the user meets the criteria defined by the rule; otherwise, it returns False.<br><br>
 ![Evaluate Rule](https://github.com/user-attachments/assets/e69e97bf-c757-4842-9d0d-b4d681912652)
 
 ## Getting Started
@@ -59,12 +59,12 @@ The goal of this project is to develop a simple 3-tier rule engine application c
    venv\Scripts\activate    # Activate the virtual environment
    ```
 
-3. **Install the required packages:**
+3. **Install the required packages**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **To run the app, use:**
+4. **To run the app, use**
    ```bash
    uvicorn app.main:app 
    ```
